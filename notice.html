@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>class</title>
-    <link rel="stylesheet" href="class.css" > 
+    <link rel="stylesheet" href="notice.css" > 
 </head>
 <body>
         <div class="container"><!-- side bar-->
@@ -16,7 +16,7 @@
                 <li ><a href="notice.html">Notice</a></li>
                 <li ><a id="Public">Public Notice</a> </li>
                 <li ><a id="Report">Report</a></li>
-                <li><a id="Search">Search</a></li>
+                 <li><a id="Search">Search</a></li>
             </ul>
         </div>
         
@@ -28,6 +28,18 @@
                             <small>View Classes</small>          
                         </div>
         
+
+        
+                  <!-- class section -->
+                     <section id="class-section" class="section hidden">
+                        <h3>Manage Classes</h3><br>
+                        <form id="class- form">
+                            <p><input type="text" id="class-search" placeholder="Search Classes....."></p> 
+                            <p><input type="text" id="class-name" placeholder="Class Name" required><br></p>
+                            <input type="hidden" id="class-index">
+                            <button type="submit">Add Class</button>
+                        </form>
+                     </section>
 
     
 </body>

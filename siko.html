@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="siko.css">
+</head>
+<body>
+    <div class="container"><!-- side bar-->
+        <div class="sidebar">
+            <h2>Dashboard</h2>
+            <ul>
+                <li><a href="siko.html">Dashboard</a></li>
+                <li><a href="class.html">classs</a></li>
+                <li><a href="student.html">Student</a></li>
+                <li ><a href="notice.html">Notice</a></li>
+                <li ><a id="Public">Public Notice</a> </li>
+                <li ><a id="Report">Report</a></li>
+                <li><a id="Search">Search</a></li>
+            </ul>
+        </div>
+
+
+
+
+            <!-- =================== -->
+        
+         <main class="main-content">
+            <header>
+                <h2 id="section-title">Dashboard</h2>
+                <span> Updated Report</span>
+            </header>
+        <!-- dashboard -->
+                <div id="dashboard-section">
+                    <div class="cards">  
+                        <div class="card blue">
+                            <h3>Total Classes</h3>
+                            <p><span id="total-class">0</span></p>
+                            <small>View Classes</small>          
+                        </div>
+                         <div class="card orange">
+                            <h3>Total Students</h3>
+                            <p><span id="total-student">0</span></p>
+                            <small>View Students</small>          
+                        </div>
+                        <div class="card green">  
+                            <h3>Total Classes Notice</h3>
+                            <p><span id="total-notice">0</span></p>
+                            <small>view Notice</small>          
+                        </div>
+                        <div class="card red">  
+                            <h3>Total public Notice</h3>
+                            <p><span id="total-public">0</span></p>
+                            <small>View public Notice</small>          
+                        </div>
+                        </div>
+                        <div class="chart-container">
+                            <h3>My Daily Active</h3>
+                            <canvas height="150"></canvas>
+                        </div>
+                </div>
+                  <!-- class section -->
+                     <section id="class-section" class="section hidden">
+                        <h3>Manage Classes</h3>
+                        <form id="class- form">
+                            <input type="text" id="class-name" placeholder="Class Name" required>
+                            <input type="hidden" id="class-index">
+                            <button type="submit">Add Class</button>
+                        </form>
+                        <input type="text" id="class-search" placeholder="Search Classes.....">
+                        <ul id="class-list"></ul>
+                     </section>
+
+                     
+                  <!-- Student section -->
+                     <section id="student-section" class="student hidden">
+                        <h3>Manage Students</h3>
+                        <form id="student-form">
+                            <input type="text" id="student-name" placeholder="Student Name" required />
+                            <input type="text" id="student-father" placeholder="Teacher Name" required />
+                            <select id="student-gander" required>
+                                <option value="Male">Select Gander</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                            <input type="text" id="student-class" placeholder="Teacher code" required />
+                            <input type="text" id="student-grade" placeholder="student grad" required />
+                            <input type="text" id="student-roll" placeholder="student code" required />
+                            <input type="hidden" id="student-index" >
+                            <button type="submit">Add Student</button>
+                        </form>
+
+
+                        <script src="siko.js"></script>
+
+
+</body>
+</html>

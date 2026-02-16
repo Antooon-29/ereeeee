@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(245, 222, 179, 0.405);
+}
+.container{
+    display: flex;
+    min-height: 100vh;
+}
+.sidebar{
+    background-color:rgba(245, 222, 179, 0.243);
+    padding: 10px;
+    height: 100vh;
+    border: 1px solid rgb(26, 23, 23);
+    position: sticky;
+    top: 0;
+}
+.sidebar h2{
+    margin-bottom: 20px;
+    color: rgba(0, 1, 1, 0.362);
+}
+.sidebar ul{
+    list-style: none;
+}
+.sidebar ul li {
+    color:rgb(108, 70, 0);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px ;
+    
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.sidebar ul li a:hover{
+    background-color: rgba(211, 180, 124, 0.522);
+    padding: 5px 23px 1px 10px;
+    text-decoration: underline;
+    color: blue;
+
+}
+
+.main-content{
+    flex: 1;
+    padding: 20px;
+    overflow-y:auto;
+}
+header {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:20px;
+}
+
+/* dashboard section */
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px ,1fr));/*بتخلي اتلعناصر كلها فوق في الصف الاول*/
+    gap: 20px;
+    margin-bottom: 30px;
+
+}
+.card{
+    padding: 20px;
+    color:black;
+    border-radius: 10px;
+    box-shadow: 0px 4px 9px orange;
+    transition: transform 0.9s ease-in-out;
+}
+.card:hover{
+    box-shadow: 0px 9px 9px rgb(208, 135, 0);
+    margin-bottom: 11px;
+    font-size:2.8em ;
+    transition:  0.7s ease-in-out;
+
+}
+.card h3{
+    margin-bottom: 10px;
+}
+.blue{
+    background-color: wheat;
+}
+
+
+
+.img{
+    width: 30px;
+}
+
+
+
